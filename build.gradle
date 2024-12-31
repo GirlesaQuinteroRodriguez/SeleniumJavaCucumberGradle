@@ -32,6 +32,10 @@ dependencies {
     
     // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
     testImplementation 'io.cucumber:cucumber-junit:7.20.1'
+
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
+
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -43,6 +47,5 @@ java {
 
 
 tasks.named('test') {
-    // Use JUnit Platform for unit tests.
-    useJUnitPlatform()
+  systemProperty "cucumber.options", System.getProperty("cucumber.options")
 }
