@@ -1,10 +1,9 @@
 Feature: Navigation bar
-To see the subpages
-Without login in
-I can click on the links
-
-Scenario: Puedo acceder a las subsecciones haciendo click a la navegación superior
-Given I navigate to www.freerangetesters.com
-When 
-Then Start to type your Then step here
-
+ To see the subpages
+ Without logging in
+ I can click the navigation bar links
+ 
+Scenario: I can access the subpages through the navigation bar 
+  Given I navigate to www.freerangetesters.com 
+  When I try to access the free sections through the navigation bar 
+  Then I am redirected to the right page
