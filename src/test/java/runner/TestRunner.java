@@ -11,7 +11,4 @@ glue = ".src/test/java/steps",
 plugin = {"pretty", "html:target/cucumber-reports"}
 )
 
-public class TestRunner {
-
-    
-}
+public class TestRunner {}
