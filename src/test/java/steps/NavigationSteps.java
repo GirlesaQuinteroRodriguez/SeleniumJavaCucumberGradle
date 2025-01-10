@@ -14,11 +14,5 @@ public class NavigationSteps {
   
     }
 
-    @Given("login to page")
-    public void login_to_page() {
-    // Write code here that turns the phrase above into concrete actions
-    landingPaginaPrincipal.navigateToFreeRangeTesters();
-    throw new io.cucumber.java.PendingException();
-}
-
+   
 }
