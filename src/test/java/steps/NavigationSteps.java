@@ -16,6 +16,7 @@ public class NavigationSteps {
     PaginaCursos cursosPage = new PaginaCursos();
     PaginaFundamentosTesting fundamentosPage = new PaginaFundamentosTesting();
     PaginaRegistro registro = new PaginaRegistro();
+    SoftAssert soft = new SoftAssert();
 
     @Given("I navigate to www.freerangetesters.com")
     public void iNavigateToFRT() {
