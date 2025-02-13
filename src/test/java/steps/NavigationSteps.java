@@ -28,20 +28,20 @@ public class NavigationSteps {
         landingPaginaPrincipal.clickOnSectionNavigationBar(section);
     }
 
-    @And("select Introducción al Testing")
+    @And("^(?:I|The user|The client) selects? Introducción al Testing$")
     public void navigateToIntro() {
         cursosPage.clickFundamentosTestingLink();
         fundamentosPage.clickFundamentosTestingLink();;
  
     }
 
-    @When("I select Elegir Plan")
+    @When("^(?:I|The user|The client) selects? Elegir Plan$")
     public void selectElegirPlan() {
         landingPaginaPrincipal.clickOnElegirPlanButton();
     }
 
  
-    @Then("I can validate the options in the checkout page")
+    @Then("^(?:I|The user|The client) can validate the options in the checkout page?")
     public void validateCheckoutPlans() {
         List<String> lista = registro.returnPlanDropdownValues();
         List<String> listaEsperada = Arrays.asList("Academia: $16.99 / mes • 13 productos",

@@ -46,7 +46,6 @@ java {
 }
 
 
-tasks.named('test') {
+tasks.named('test', Test) {
     systemProperty "cucumber.options", System.getProperty("cucumber.options")
-    systemProperties System.getProperties();
 }
